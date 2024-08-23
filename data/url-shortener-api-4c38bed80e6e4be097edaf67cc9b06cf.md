@@ -1,5 +1,3 @@
-# 💪 Challenge: URL Shortener API
-
 ## ⭐ Goal
 
 In this challenge, you will create a URL Shortener API. The goal is to build a service that takes long URLs as input, generates shorter, unique URLs, and redirects users to the original URL when they visit the shortened link. URL shorteners are commonly used to make sharing links easier and to track link clicks.
