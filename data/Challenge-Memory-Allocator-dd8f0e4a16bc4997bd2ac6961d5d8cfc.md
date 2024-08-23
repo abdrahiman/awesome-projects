@@ -1,5 +1,3 @@
-# 💪 Challenge: Memory Allocator
-
 ## ⭐ Goal
 
 In this challenge, you will create a custom memory allocator. A memory allocator is a tool that helps manage memory in a computer program. Think of it as a system that decides where and how much memory your program should use when it needs to store data.
