@@ -2,7 +2,7 @@
 
 In this challenge, you will create a URL Shortener API. The goal is to build a service that takes long URLs as input, generates shorter, unique URLs, and redirects users to the original URL when they visit the shortened link. URL shorteners are commonly used to make sharing links easier and to track link clicks.
 
-### 🚨 Requirements
+## 🚨 Requirements
 
 1. **API Endpoints:**
     - **POST `/shorten`**: Accepts a long URL and returns a shortened version.
@@ -13,21 +13,20 @@ In this challenge, you will create a URL Shortener API. The goal is to build a s
 5. **Redirection:** When a user visits the short URL, your API should perform a 301 or 302 redirect to the original URL.
 6. **Error Handling:** Handle cases where the short code does not exist in the database, returning an appropriate error message.
 
-### 💼 Usage
-
+## 💼 Usage
 ### Input
 
 - **POST `/shorten`**:
-    - **Body:** A JSON object with a `url` field containing the long URL.
+      **Body:** A JSON object with a `url` field containing the long URL.
     
-    ```json
+      ```json
     {
       "url": "https://www.example.com/some/very/long/path"
     }
-    ```
+        ```
     
 - **GET `/r/{short_code}`**:
-    - **Path Parameter:** The `{short_code}` representing the shortened URL.
+    **Path Parameter:** The `{short_code}` representing the shortened URL.
 
 ### Output
 
@@ -43,13 +42,13 @@ In this challenge, you will create a URL Shortener API. The goal is to build a s
 - **GET `/r/{short_code}`**:
     - **Redirection:** A 301 or 302 redirect to the original long URL.
 
-### 🧪 Testing
+## 🧪 Testing
 
 - Test the API by shortening various URLs and ensure that each short URL correctly redirects to the original.
 - Verify that the short codes are unique and that no two different long URLs produce the same short code.
 - Check the handling of invalid URLs and non-existent short codes to ensure that the API responds with appropriate error messages.
 
-### 🍥 Bonus
+## 🍥 Bonus
 
 - Implement a custom short code feature that allows users to specify their own short code instead of generating one.
 - Add a feature to track and return the number of times each short URL has been accessed.
