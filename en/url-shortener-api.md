@@ -16,30 +16,28 @@ In this challenge, you will create a URL Shortener API. The goal is to build a s
 ## 💼 Usage
 ### Input
 
-- **POST `/shorten`**:
-      **Body:** A JSON object with a `url` field containing the long URL.
+- ` POST /shorten`:
+**Body:** A JSON object with a `url` field containing the long URL.
+```json
+{
+    "url": "https://www.example.com/some/very/long/path"
+}
+```
     
-      ```json
-    {
-      "url": "https://www.example.com/some/very/long/path"
-    }
-        ```
-    
-- **GET `/r/{short_code}`**:
-    **Path Parameter:** The `{short_code}` representing the shortened URL.
+- `GET /r/{short_code}`:
+**Path Parameter:** The `{short_code}` representing the shortened URL.
 
 ### Output
 
-- **POST `/shorten`**
-    - **Response:** A JSON object with a `short_url` field containing the shortened URL.
-    
+- `POST /shorten`
+    - **Response:** A JSON object with a `short_url` field containing the shortened URL:
     ```json
     {
     	"short_url": "http://yourdomain.com/r/abc123"
     }
     ```
     
-- **GET `/r/{short_code}`**:
+- `GET /r/{short_code}`:
     - **Redirection:** A 301 or 302 redirect to the original long URL.
 
 ## 🧪 Testing
