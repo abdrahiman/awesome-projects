@@ -1,5 +1,3 @@
-# 💪 Challenge: URL Shortener API
-
 ## ⭐ Goal
 
 In this challenge, you will implement a multi-client chat server using TCP sockets. The server should be able to handle multiple client connections simultaneously, allowing users to join chat rooms, send messages to all participants in their room, and leave the chat when they're done.
